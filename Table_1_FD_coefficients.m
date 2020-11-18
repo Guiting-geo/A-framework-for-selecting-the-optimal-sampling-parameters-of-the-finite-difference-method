@@ -11,7 +11,6 @@ Vmin=1500;
 Vm=2500;
 Vmax=5500;
 
-
 dt=stability_tste_dt_plot(M,Vmin,Vmax, dx)
 
 r1=Vmin*dt/dx;
