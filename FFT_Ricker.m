@@ -10,7 +10,6 @@ for it=0:nt-1
     Ricker(it+1)=(1.0-2.0*a)*exp(-a);
 end
 
-
 fs=1/dt; %采样频率
 Ndata=nt; %数据长度
 N=512; %FFT的数据长度
