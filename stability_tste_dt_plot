@@ -1,11 +1,8 @@
 function dt=stability_tste_dt_plot(M,Vmin,Vmax, dx)
 
-
-
 for i=1:1000
     r(i)=0.001*i;
     a=fdcoeff_time_space_angles_r(M,0,r(i));
-    
     temp=0;
     for m=1:M
         temp=temp+a(m+1)*(  (-1)^(m-1)  +1   );
@@ -84,10 +81,7 @@ if i_op>0
     
     text(dtt(i_op)*Vmin/dx,s_ts(i_op)-0.02,'C','FontSize',13);       % C
     
-    
-    
-    %%%%%%%%%%%%%%%%%%%  variation of velocity  %%%%%%%%%%%%%%%%%%%
-    
+       
     XRmin=ones(1,100)*dtt(i_op)*Vmin/dx;
     YRmin=(1:100)*0.01;
     size(XRmin);
